@@ -1,28 +1,23 @@
-
 import React from 'react';
 import { WhatsAppIcon } from './icons/WhatsAppIcon';
 
-interface CTAButtonProps {
-    href: string;
+interface CTAButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     children: React.ReactNode;
     size?: 'normal' | 'large';
+    showIcon?: boolean;
 }
 
-export const CTAButton: React.FC<CTAButtonProps> = ({ href, children, size = 'normal' }) => {
-    const isExternal = href.startsWith('http');
-    
-    const sizeClasses = size === 'large' 
-        ? 'px-8 py-4 text-lg md:text-xl' 
+export const CTAButton: React.FC<CTAButtonProps> = ({ children, size = 'normal', className, showIcon = false, ...props }) => {
+    const sizeClasses = size === 'large'
+        ? 'px-8 py-4 text-lg md:text-xl'
         : 'px-6 py-3 text-base';
 
     return (
         <a
-            href={href}
-            target={isExternal ? '_blank' : '_self'}
-            rel={isExternal ? 'noopener noreferrer' : ''}
-            className={`inline-flex items-center justify-center font-sans font-bold text-white bg-brand-amber hover:bg-brand-amber-light rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-amber-light ${sizeClasses}`}
+            {...props}
+            className={`inline-flex items-center justify-center font-sans font-bold text-white bg-brand-amber hover:bg-brand-amber-light rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-amber-light ${sizeClasses} ${className || ''}`}
         >
-            <WhatsAppIcon className="w-5 h-5 mr-3" />
+            {showIcon && <WhatsAppIcon className="w-5 h-5 mr-3" />}
             {children}
         </a>
     );
