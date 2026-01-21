@@ -9,7 +9,7 @@ interface CTAButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 
 export const CTAButton: React.FC<CTAButtonProps> = ({ children, size = 'normal', className, showIcon = false, ...props }) => {
     const sizeClasses = size === 'large'
-        ? 'px-8 py-4 text-lg md:text-xl'
+        ? 'px-8 py-4 text-base md:text-lg whitespace-nowrap'
         : 'px-6 py-3 text-base';
 
     return (

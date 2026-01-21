@@ -31,7 +31,7 @@ const HeroHeader = () => (
             {/* Headline - Centralized at Top */}
             <div className="text-center pt-16 md:pt-24 relative z-50">
                 <FadeIn>
-                    <h1 className="font-serif text-[32.4px] md:text-5xl lg:text-[56px] text-white leading-[1.2] tracking-tight drop-shadow-2xl mx-auto max-w-5xl">
+                    <h1 className="font-serif text-[30px] md:text-5xl lg:text-[56px] text-white leading-[1.2] tracking-tight drop-shadow-2xl mx-auto max-w-5xl">
                         <span className="block mb-2">Marketing não falha por falta de execução.</span>
                         <span className="bg-gradient-to-r from-[#00A3A3] to-[#4FD1C5] bg-[#4FD1C5] bg-clip-text text-transparent font-semibold tracking-[-0.015em] drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)] inline-block py-1" style={{ backgroundImage: 'linear-gradient(110deg, #00A3A3, #4FD1C5)' }}>
                             Falha por falta de clareza.
@@ -60,10 +60,10 @@ const HeroHeader = () => (
             <div className="text-center py-10 md:py-16 relative z-50 lg:text-left lg:max-w-xl lg:my-auto">
                 <FadeIn>
                     <div className="space-y-6">
-                        <h2 className="text-xl md:text-2xl text-slate-300/80 font-sans font-medium leading-relaxed">
+                        <h2 className="text-[18px] md:text-[24px] text-slate-300/80 font-sans font-medium leading-relaxed">
                             Antes de investir em <span className="font-bold text-white">anúncios</span>, <span className="font-bold text-white">agência</span> ou qualquer <span className="font-bold text-white">ação digital</span>, você precisa entender o que faz sentido para o seu negócio <span className="font-bold text-white">agora</span>.
                         </h2>
-                        <p className="text-lg md:text-xl text-slate-400/80 italic">
+                        <p className="text-base md:text-xl text-slate-400/80 italic">
                             A maioria dos negócios perde tempo e dinheiro tentando “fazer marketing” sem saber <strong className="text-white not-italic">onde investir, o que priorizar e o que parar de fazer.</strong>
                         </p>
                     </div>
@@ -85,23 +85,23 @@ const ProblemScenariosSection = () => (
                 <h2 className="font-serif text-3xl md:text-4xl text-center text-teal-dark font-bold">
                     Talvez você se reconheça em pelo menos um desses cenários:
                 </h2>
-                <div className="mt-12 grid md:grid-cols-2 gap-6 text-slate-700 text-lg">
+                <div className="mt-12 grid md:grid-cols-2 gap-6 text-slate-700 text-base md:text-lg">
                     <div className="bg-smoke p-6 rounded-lg shadow-sm">– Já pensou em contratar um gestor de tráfego, mas não sabe se é a hora certa</div>
                     <div className="bg-smoke p-6 rounded-lg shadow-sm">– Já investiu em anúncios, mas sem retorno claro</div>
                     <div className="bg-smoke p-6 rounded-lg shadow-sm">– Já fez site, Instagram, posts, campanhas… tudo meio desconectado</div>
                     <div className="bg-smoke p-6 rounded-lg shadow-sm">– Recebe propostas diferentes, cada uma puxando para um lado</div>
                 </div>
                 <div className="mt-12 text-center max-w-3xl mx-auto">
-                    <p className="text-xl font-semibold text-graphite">E o mais frustrante:</p>
-                    <p className="mt-4 text-xl text-slate-600">
+                    <p className="text-base md:text-lg font-semibold text-graphite">E o mais frustrante:</p>
+                    <p className="mt-4 text-base md:text-lg text-slate-600">
                         Você sabe que seu produto ou serviço é bom. Sabe que existe mercado. Mas vender de forma constante ainda parece imprevisível.
                     </p>
-                    <p className="mt-8 text-xl font-bold text-teal-primary border-t border-b border-teal-primary/20 py-4">
+                    <p className="mt-8 text-base md:text-lg font-bold text-teal-primary border-t border-b border-teal-primary/20 py-4">
                         O problema raramente é esforço. Na maioria das vezes, é <strong className="text-teal-dark">falta de direção estratégica.</strong>
                     </p>
                 </div>
                 <div className="mt-12 text-center">
-                    <a href="#reenquadramento" className="inline-block font-sans font-semibold text-white bg-teal-primary hover:bg-teal-dark rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 px-8 py-3 text-lg">
+                    <a href="#reenquadramento" className="inline-block font-sans font-semibold text-white bg-teal-primary hover:bg-teal-dark rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 px-8 py-3 text-base md:text-lg">
                         Isso faz sentido pra mim
                     </a>
                 </div>
@@ -116,17 +116,17 @@ const MarketingDecisionSection = () => (
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
             <FadeIn>
                 <div className="text-center">
-                    <p className="text-xl text-slate-300">Pouca gente fala isso, mas é a verdade:</p>
+                    <p className="text-base md:text-lg text-slate-300">Pouca gente fala isso, mas é a verdade:</p>
                     <h2 className="font-serif text-4xl md:text-5xl mt-4 text-white">
                         Marketing não começa com anúncios. <br /><span className="text-amber-400">Começa com decisão.</span>
                     </h2>
-                    <p className="mt-8 max-w-2xl mx-auto text-xl text-slate-200">
+                    <p className="mt-8 max-w-2xl mx-auto text-base md:text-lg text-slate-200">
                         Empresas que crescem não testam tudo. Elas <strong className="text-white">priorizam certo.</strong>
                     </p>
                 </div>
                 <div className="mt-12 max-w-2xl mx-auto bg-slate-800/80 p-8 rounded-xl shadow-lg">
-                    <h3 className="text-2xl font-semibold text-white">Sabem:</h3>
-                    <ul className="mt-6 space-y-4 text-xl text-slate-300">
+                    <h3 className="text-xl md:text-2xl font-semibold text-white">Sabem:</h3>
+                    <ul className="mt-6 space-y-4 text-base md:text-lg text-slate-300">
                         <li className="flex items-start"><span className="text-amber-400 mr-3 mt-1">●</span> qual canal faz sentido agora</li>
                         <li className="flex items-start"><span className="text-amber-400 mr-3 mt-1">●</span> qual oferta precisa ser ajustada</li>
                         <li className="flex items-start"><span className="text-amber-400 mr-3 mt-1">●</span> qual etapa do funil está travando</li>
@@ -135,11 +135,11 @@ const MarketingDecisionSection = () => (
                         </li>
                     </ul>
                 </div>
-                <p className="mt-10 text-center text-2xl font-serif text-white italic">
+                <p className="mt-10 text-center text-xl md:text-2xl font-serif text-white italic">
                     Quem pula essa etapa, <strong className="text-amber-400">executa mais… e cresce menos.</strong>
                 </p>
                 <div className="mt-12 text-center">
-                    <a href="#como-funciona" className="inline-block font-sans font-semibold text-white bg-teal-primary hover:bg-teal-dark rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 px-8 py-3 text-lg">
+                    <a href="#como-funciona" className="inline-block font-sans font-semibold text-white bg-teal-primary hover:bg-teal-dark rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 px-8 py-3 text-base md:text-lg">
                         Quero organizar meu marketing
                     </a>
                 </div>
@@ -159,12 +159,12 @@ const LookingForSection = () => (
                         <span className="bg-teal-primary/10 py-2 px-4 rounded-full font-medium">agência de marketing</span>
                         <span className="bg-teal-primary/10 py-2 px-4 rounded-full font-medium">anúncios no Google ou Instagram</span>
                     </div>
-                    <p className="mt-8 text-xl text-slate-700">Isso faz sentido.</p>
-                    <p className="mt-6 text-lg text-slate-600">Mas antes de colocar alguém para executar, existe uma pergunta que quase ninguém responde direito:</p>
-                    <blockquote className="mt-8 border-l-4 border-brand-amber bg-amber-500/10 p-6 text-xl md:text-2xl font-serif text-graphite text-left rounded-r-lg">
+                    <p className="mt-8 text-base md:text-lg text-slate-700">Isso faz sentido.</p>
+                    <p className="mt-6 text-base md:text-lg text-slate-600">Mas antes de colocar alguém para executar, existe uma pergunta que quase ninguém responde direito:</p>
+                    <blockquote className="mt-8 border-l-4 border-brand-amber bg-amber-500/10 p-6 text-lg md:text-xl font-serif text-graphite text-left rounded-r-lg">
                         “<strong className="text-brand-amber">O que exatamente precisa ser feito</strong> no meu negócio para gerar resultado?”
                     </blockquote>
-                    <p className="mt-8 text-lg text-slate-600">Sem essa resposta, <strong className="text-graphite">tráfego vira aposta. Site vira vitrine vazia. Conteúdo vira esforço solto.</strong></p>
+                    <p className="mt-8 text-base md:text-lg text-slate-600">Sem essa resposta, <strong className="text-graphite">tráfego vira aposta. Site vira vitrine vazia. Conteúdo vira esforço solto.</strong></p>
                 </div>
             </FadeIn>
         </div>
@@ -178,15 +178,15 @@ const ProcessSection = () => (
             <FadeIn>
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <p className="font-semibold text-teal-primary text-lg">É por isso que, antes de qualquer execução, eu trabalho com um processo simples:</p>
+                        <p className="font-semibold text-teal-primary text-base md:text-lg">É por isso que, antes de qualquer execução, eu trabalho com um processo simples:</p>
                         <div className="mt-8 space-y-6">
-                            <div className="flex items-start"><span className="font-serif text-4xl text-teal-primary/30 mr-4">1.</span><p className="text-xl mt-1 text-graphite">Entender o negócio de verdade</p></div>
-                            <div className="flex items-start"><span className="font-serif text-4xl text-teal-primary/30 mr-4">2.</span><p className="text-xl mt-1 text-graphite">Analisar o que já foi feito (e o que não funcionou)</p></div>
-                            <div className="flex items-start"><span className="font-serif text-4xl text-teal-primary/30 mr-4">3.</span><p className="text-xl mt-1 text-graphite">Mapear oportunidades reais de crescimento</p></div>
-                            <div className="flex items-start"><span className="font-serif text-4xl text-teal-primary/30 mr-4">4.</span><p className="text-xl mt-1 text-graphite">Definir prioridades claras</p></div>
-                            <div className="flex items-start"><span className="font-serif text-4xl text-teal-primary/30 mr-4">5.</span><p className="text-xl mt-1 text-graphite">Transformar tudo isso em um plano aplicável</p></div>
+                            <div className="flex items-start"><span className="font-serif text-3xl md:text-4xl text-teal-primary/30 mr-4">1.</span><p className="text-base md:text-lg mt-1 text-graphite">Entender o negócio de verdade</p></div>
+                            <div className="flex items-start"><span className="font-serif text-3xl md:text-4xl text-teal-primary/30 mr-4">2.</span><p className="text-base md:text-lg mt-1 text-graphite">Analisar o que já foi feito (e o que não funcionou)</p></div>
+                            <div className="flex items-start"><span className="font-serif text-3xl md:text-4xl text-teal-primary/30 mr-4">3.</span><p className="text-base md:text-lg mt-1 text-graphite">Mapear oportunidades reais de crescimento</p></div>
+                            <div className="flex items-start"><span className="font-serif text-3xl md:text-4xl text-teal-primary/30 mr-4">4.</span><p className="text-base md:text-lg mt-1 text-graphite">Definir prioridades claras</p></div>
+                            <div className="flex items-start"><span className="font-serif text-3xl md:text-4xl text-teal-primary/30 mr-4">5.</span><p className="text-base md:text-lg mt-1 text-graphite">Transformar tudo isso em um plano aplicável</p></div>
                         </div>
-                        <div className="mt-8 border-t-2 border-teal-primary/10 pt-6 space-y-3 text-slate-500 italic text-lg">
+                        <div className="mt-8 border-t-2 border-teal-primary/10 pt-6 space-y-3 text-slate-500 italic text-base md:text-lg">
                             <p>Sem teoria desnecessária.</p>
                             <p>Sem achismos.</p>
                             <p>Sem fórmulas prontas.</p>
@@ -236,13 +236,13 @@ const XPressConsultancySection = () => (
             <FadeIn>
                 <div className="text-center max-w-3xl mx-auto">
                     <h2 className="font-serif text-4xl md:text-5xl drop-shadow-lg">Esse processo se chama<br /><span className="bg-amber-400 text-graphite px-4 py-1 mt-2 inline-block rounded-md shadow-lg">Consultoria X-Press.</span></h2>
-                    <p className="mt-6 text-xl text-teal-100">Uma consultoria estratégica, direta e prática, criada para quem precisa clareza antes de investir pesado em marketing.</p>
-                    <div className="mt-10 text-lg space-y-2 text-teal-200">
+                    <p className="mt-6 text-base md:text-lg text-teal-100">Uma consultoria estratégica, direta e prática, criada para quem precisa clareza antes de investir pesado em marketing.</p>
+                    <div className="mt-10 text-base md:text-lg space-y-2 text-teal-200">
                         <p>Não é um curso.</p>
                         <p>Não é uma mentoria longa.</p>
                         <p>Não é um plano de negócios de 30 páginas.</p>
                     </div>
-                    <p className="mt-8 text-2xl font-bold bg-white text-teal-dark py-4 px-6 rounded-lg shadow-2xl">É um diagnóstico + plano de ação, feito sob medida para o seu negócio.</p>
+                    <p className="mt-8 text-xl md:text-2xl font-bold bg-white text-teal-dark py-4 px-6 rounded-lg shadow-2xl">É um diagnóstico + plano de ação, feito sob medida para o seu negócio.</p>
                 </div>
             </FadeIn>
         </div>
@@ -263,8 +263,8 @@ const HowItWorksSection = () => (
                         <div className="absolute -top-7 left-1/2 -translate-x-1/2 font-serif text-8xl text-teal-primary/10 font-bold z-0">1</div>
                         <div className="relative z-10">
                             <h3 className="font-serif text-2xl text-graphite">Diagnóstico Estratégico</h3>
-                            <p className="mt-4 text-slate-600 text-lg">Você responde a um briefing simples. Eu analiso seu negócio, mercado, posicionamento e histórico de ações.</p>
-                            <p className="mt-4 font-semibold text-graphite text-lg">Aqui o foco é entender:</p>
+                            <p className="mt-4 text-slate-600 text-base md:text-lg">Você responde a um briefing simples. Eu analiso seu negócio, mercado, posicionamento e histórico de ações.</p>
+                            <p className="mt-4 font-semibold text-graphite text-base md:text-lg">Aqui o foco é entender:</p>
                             <ul className="mt-2 space-y-1 text-slate-600 text-base">
                                 <li>● onde está o gargalo</li>
                                 <li>● o que está desalinhado</li>
@@ -276,8 +276,8 @@ const HowItWorksSection = () => (
                         <div className="absolute -top-7 left-1/2 -translate-x-1/2 font-serif text-8xl text-teal-primary/10 font-bold z-0">2</div>
                         <div className="relative z-10">
                             <h3 className="font-serif text-2xl text-graphite">Plano de Ação Personalizado</h3>
-                            <p className="mt-4 text-slate-600 text-lg">Com base no diagnóstico, eu construo um plano claro e objetivo, normalmente para os próximos 30 a 90 dias.</p>
-                            <p className="mt-4 font-semibold text-graphite text-lg">Definindo:</p>
+                            <p className="mt-4 text-slate-600 text-base md:text-lg">Com base no diagnóstico, eu construo um plano claro e objetivo, normalmente para os próximos 30 a 90 dias.</p>
+                            <p className="mt-4 font-semibold text-graphite text-base md:text-lg">Definindo:</p>
                             <ul className="mt-2 space-y-1 text-slate-600 text-base">
                                 <li>● funil mais adequado</li>
                                 <li>● canais prioritários</li>
@@ -290,8 +290,8 @@ const HowItWorksSection = () => (
                         <div className="absolute -top-7 left-1/2 -translate-x-1/2 font-serif text-8xl text-teal-primary/10 font-bold z-0">3</div>
                         <div className="relative z-10">
                             <h3 className="font-serif text-2xl text-graphite">Call de Apresentação (1:1)</h3>
-                            <p className="mt-4 text-slate-600 text-lg">Marcamos uma call individual para eu apresentar o plano, explicar o raciocínio e tirar dúvidas.</p>
-                            <p className="mt-4 font-semibold text-graphite text-lg">O objetivo não é te convencer de nada. É te deixar seguro para decidir os próximos passos.</p>
+                            <p className="mt-4 text-slate-600 text-base md:text-lg">Marcamos uma call individual para eu apresentar o plano, explicar o raciocínio e tirar dúvidas.</p>
+                            <p className="mt-4 font-semibold text-graphite text-base md:text-lg">O objetivo não é te convencer de nada. É te deixar seguro para decidir os próximos passos.</p>
                         </div>
                     </div>
                 </div>
@@ -309,8 +309,8 @@ const DeliverablesSection = () => (
                     <div className="grid md:grid-cols-2 gap-10 items-center">
                         <div>
                             <h2 className="font-serif text-3xl md:text-4xl text-center text-teal-dark font-bold">O que você sai levando</h2>
-                            <p className="mt-6 text-xl text-slate-600 text-center">Ao final da Consultoria X-Press, você terá:</p>
-                            <ul className="mt-8 space-y-4 text-xl">
+                            <p className="mt-6 text-base md:text-lg text-slate-600 text-center">Ao final da Consultoria X-Press, você terá:</p>
+                            <ul className="mt-8 space-y-4 text-base md:text-lg">
                                 <li className="flex items-center"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary" /> Clareza sobre o que está travando suas vendas</li>
                                 <li className="flex items-center"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary" /> Um plano de ação prático e priorizado</li>
                                 <li className="flex items-center"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary" /> Direção estratégica para marketing e vendas</li>
@@ -319,8 +319,8 @@ const DeliverablesSection = () => (
                             </ul>
                         </div>
                         <div className="bg-teal-primary/10 p-8 rounded-lg text-center">
-                            <p className="text-xl text-slate-600">Em resumo:</p>
-                            <p className="font-serif text-4xl text-teal-dark mt-2">você para de reagir e começa a decidir.</p>
+                            <p className="text-base md:text-lg text-slate-600">Em resumo:</p>
+                            <p className="font-serif text-3xl md:text-4xl text-teal-dark mt-2">você para de reagir e começa a decidir.</p>
                         </div>
                     </div>
                     <div className="mt-12 text-center">
@@ -339,15 +339,15 @@ const DisclaimerSection = () => (
         <div className="container mx-auto px-6 max-w-7xl">
             <FadeIn>
                 <div className="bg-smoke border-l-4 border-brand-amber p-8 rounded-r-lg max-w-3xl mx-auto">
-                    <h3 className="font-serif text-2xl text-graphite">Essa consultoria <span className="underline">não</span> é para quem quer apenas rodar anúncios.</h3>
-                    <p className="mt-6 text-xl text-slate-700">Ela é para:</p>
-                    <ul className="mt-4 space-y-2 text-lg text-graphite list-disc list-inside">
+                    <h3 className="font-serif text-xl md:text-2xl text-graphite">Essa consultoria <span className="underline">não</span> é para quem quer apenas rodar anúncios.</h3>
+                    <p className="mt-6 text-base md:text-lg text-slate-700">Ela é para:</p>
+                    <ul className="mt-4 space-y-2 text-base md:text-lg text-graphite list-disc list-inside">
                         <li>empresários</li>
                         <li>decisores</li>
                         <li>pessoas que querem estruturar crescimento</li>
                         <li>e entendem que <strong className="text-brand-amber">execução sem estratégia custa caro</strong></li>
                     </ul>
-                    <p className="mt-6 text-slate-600 italic text-lg">Se você busca alguém só para “apertar botões”, provavelmente não faz sentido começarmos por aqui.</p>
+                    <p className="mt-6 text-slate-600 italic text-base md:text-lg">Se você busca alguém só para “apertar botões”, provavelmente não faz sentido começarmos por aqui.</p>
                 </div>
             </FadeIn>
         </div>
@@ -367,8 +367,8 @@ const AboutMeSection = () => (
                         <img alt="Ramon Bordoni" className="rounded-lg w-64 h-64 md:w-80 md:h-80 object-cover shadow-xl" src="/img/eu-pc.png" />
                     </div>
                     <div className="lg:col-span-3">
-                        <h2 className="font-serif text-3xl text-graphite">Sou <span className="text-teal-primary">Ramon Bordoni</span>, estrategista de marketing digital.</h2>
-                        <p className="mt-6 text-lg text-slate-600">Já atuei em:</p>
+                        <h2 className="font-serif text-2xl md:text-3xl text-graphite">Sou <span className="text-teal-primary">Ramon Bordoni</span>, estrategista de marketing digital.</h2>
+                        <p className="mt-6 text-base md:text-lg text-slate-600">Já atuei em:</p>
                         <div className="mt-4 flex flex-wrap gap-3 text-slate-700">
                             <span className="bg-slate-200 py-1 px-3 rounded-md text-sm">lançamentos digitais</span>
                             <span className="bg-slate-200 py-1 px-3 rounded-md text-sm">negócios locais</span>
@@ -377,10 +377,10 @@ const AboutMeSection = () => (
                             <span className="bg-slate-200 py-1 px-3 rounded-md text-sm">projetos políticos</span>
                             <span className="bg-slate-200 py-1 px-3 rounded-md text-sm">operações com alto investimento</span>
                         </div>
-                        <p className="mt-6 text-lg text-slate-600">Hoje, também atuo como estrategista e coordenador de projetos em uma agência de marketing digital, liderando projetos de empresas com diferentes níveis de maturidade.</p>
+                        <p className="mt-6 text-base md:text-lg text-slate-600">Hoje, também atuo como estrategista e coordenador de projetos em uma agência de marketing digital, liderando projetos de empresas com diferentes níveis de maturidade.</p>
                         <div className="mt-6 border-t border-teal-primary/20 pt-6">
-                            <p className="text-xl text-slate-600">O padrão que sempre se repete é simples: <span className="font-semibold text-graphite">quando existe clareza, a execução flui.</span></p>
-                            <p className="mt-4 text-lg text-slate-600">A Consultoria X-Press nasceu para entregar essa clareza — de forma acessível, prática e honesta.</p>
+                            <p className="text-base md:text-lg text-slate-600">O padrão que sempre se repete é simples: <span className="font-semibold text-graphite">quando existe clareza, a execução flui.</span></p>
+                            <p className="mt-4 text-base md:text-lg text-slate-600">A Consultoria X-Press nasceu para entregar essa clareza — de forma acessível, prática e honesta.</p>
                         </div>
                     </div>
                 </div>
@@ -395,13 +395,13 @@ const ImplementationSection = () => (
             <FadeIn>
                 <div className="text-center max-w-2xl mx-auto">
                     <h2 className="font-serif text-3xl md:text-4xl text-center text-teal-dark font-bold">Sobre a Implementação</h2>
-                    <p className="mt-6 text-xl text-slate-600">Após a consultoria, você decide como executar o plano. Pode ser:</p>
-                    <ul className="mt-6 text-lg space-y-3 text-slate-700">
+                    <p className="mt-6 text-base md:text-lg text-slate-600">Após a consultoria, você decide como executar o plano. Pode ser:</p>
+                    <ul className="mt-6 text-base md:text-lg space-y-3 text-slate-700">
                         <li>● com equipe interna</li>
                         <li>● com fornecedores</li>
                         <li>● ou, se fizer sentido, comigo</li>
                     </ul>
-                    <p className="mt-8 font-semibold bg-teal-primary/10 text-teal-dark p-4 rounded-lg text-lg">A X-Press não é uma venda disfarçada. É um ponto de partida estratégico.</p>
+                    <p className="mt-8 font-semibold bg-teal-primary/10 text-teal-dark p-4 rounded-lg text-base md:text-lg">A X-Press não é uma venda disfarçada. É um ponto de partida estratégico.</p>
                 </div>
             </FadeIn>
         </div>
@@ -416,11 +416,11 @@ const OfferSection = () => (
                     <div className="absolute inset-0 bg-gradient-to-br from-graphite/90 to-slate-800/90"></div>
                     <div className="relative z-10">
                         <div className="text-center mb-10">
-                            <h3 className="text-2xl font-bold text-amber-400">💥 Oferta de Lançamento (por tempo limitado)</h3>
-                            <p className="mt-2 text-slate-300 text-lg">Garanta sua vaga com o valor especial e receba um plano de ação completo:</p>
+                            <h3 className="text-xl md:text-2xl font-bold text-amber-400">💥 Oferta de Lançamento (por tempo limitado)</h3>
+                            <p className="mt-2 text-slate-300 text-base md:text-lg">Garanta sua vaga com o valor especial e receba um plano de ação completo:</p>
                         </div>
                         <div className="grid md:grid-cols-2 gap-10 items-center">
-                            <ul className="space-y-3 text-lg text-slate-200">
+                            <ul className="space-y-3 text-base md:text-lg text-slate-200">
                                 <li className="flex items-start"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary flex-shrink-0 mt-1" /><span>Direção estratégica de marketing e vendas no digital</span></li>
                                 <li className="flex items-start"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary flex-shrink-0 mt-1" /><span>Plano de ação prático em PDF</span></li>
                                 <li className="flex items-start"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary flex-shrink-0 mt-1" /><span>Apresentação do plano de ação ao vivo</span></li>
@@ -457,7 +457,7 @@ const FinalCTASection = () => (
             <FadeIn>
                 <div className="text-center max-w-2xl mx-auto">
                     <h2 className="font-serif text-4xl md:text-5xl text-graphite">Se você quer parar de adivinhar e começar a <span className="text-teal-primary">decidir com estratégia</span>,</h2>
-                    <p className="mt-6 text-xl text-slate-600">👇 clique abaixo e fale comigo no WhatsApp:</p>
+                    <p className="mt-6 text-base md:text-lg text-slate-600">👇 clique abaixo e fale comigo no WhatsApp:</p>
                     <div className="mt-10">
                         <CTAButton
                             href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Consultoria%20X-Press%20e%20gostaria%20de%20saber%20mais."
