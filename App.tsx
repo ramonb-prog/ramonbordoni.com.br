@@ -12,60 +12,69 @@ const RAMON_PHOTO_BASE64 = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4
 
 
 const HeroHeader = () => (
-    <header className="bg-smoke relative overflow-hidden bg-graphite">
-        <div 
-            className="absolute inset-0 z-0 bg-cover bg-center opacity-20"
-            style={{ backgroundImage: `url("https://picsum.photos/seed/tech-abstract/1920/1080")` }}
+    <header className="bg-graphite relative min-h-screen overflow-hidden flex flex-col justify-center">
+        {/* Background base */}
+        {/* Background base - User Provided Premium Image (Pure) */}
+        <div
+            className="absolute inset-0 z-0 bg-cover bg-center"
+            style={{
+                backgroundImage: 'url("/img/background2-hero-xpress.png")'
+            }}
         ></div>
-        <div 
-            className="absolute inset-0 z-10"
-            style={{ backgroundImage: `url("${WEB_BG_SVG_BASE64}")`, backgroundRepeat: 'repeat', opacity: 0.3 }}
-        ></div>
-        <div className="absolute inset-0 z-0 bg-graphite/60"></div>
 
-        <section className="relative z-20 py-16 sm:py-20 md:py-24 min-h-screen flex flex-col justify-center">
-            <div className="container mx-auto px-6 max-w-7xl">
+        {/* Soft Radial Dark Overlay for text readability */}
+        <div className="absolute inset-0 z-10 bg-[radial-gradient(circle_at_30%_50%,rgba(2,6,23,0.08)_0%,transparent_70%)] pointer-events-none"></div>
+
+
+
+        <div className="container mx-auto px-6 max-w-7xl relative z-50 flex flex-col min-h-screen">
+            {/* Headline - Centralized at Top */}
+            <div className="text-center pt-16 md:pt-24 relative z-50">
                 <FadeIn>
-                    <div className="text-center mb-12 md:mb-16">
-                        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight drop-shadow-lg">
-                            Marketing não falha por falta de execução.
-                            <br/> 
-                            <span className="bg-teal-primary/20 text-teal-100 px-3 pb-1 mt-2 inline-block">Falha por falta de clareza.</span>
-                        </h1>
+                    <h1 className="font-serif text-[32.4px] md:text-5xl lg:text-[56px] text-white leading-[1.2] tracking-tight drop-shadow-2xl mx-auto max-w-5xl">
+                        <span className="block mb-2">Marketing não falha por falta de execução.</span>
+                        <span className="bg-gradient-to-r from-[#00A3A3] to-[#4FD1C5] bg-[#4FD1C5] bg-clip-text text-transparent font-semibold tracking-[-0.015em] drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)] inline-block py-1" style={{ backgroundImage: 'linear-gradient(110deg, #00A3A3, #4FD1C5)' }}>
+                            Falha por falta de clareza.
+                        </span>
+                    </h1>
+                </FadeIn>
+            </div>
+
+            {/* Photo - Integrated in flow for Mobile, Absolute for Desktop */}
+            <div className="relative -mt-24 mb-4 lg:mt-0 lg:mb-0 lg:absolute lg:bottom-0 lg:-right-20 z-40 w-full flex justify-center lg:justify-end pointer-events-none lg:-translate-y-8">
+                <FadeIn className="w-full max-w-[350px] md:max-w-[500px] lg:max-w-[750px] xl:max-w-[850px]">
+                    <div style={{
+                        WebkitMaskImage: 'linear-gradient(to bottom, black 90%, transparent 100%)',
+                        maskImage: 'linear-gradient(to bottom, black 90%, transparent 100%)'
+                    }}>
+                        <img
+                            alt="Ramon Bordoni, Estrategista e Growth Hacker"
+                            className="h-auto w-full object-contain filter drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)] mix-blend-normal scale-110 origin-top lg:scale-100"
+                            src="/img/Ramon-Bordoni-Hero-XPress.png"
+                        />
                     </div>
                 </FadeIn>
-
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
-                    {/* Left Column: Text Content */}
-                    <div className="text-center lg:text-left">
-                        <FadeIn>
-                            <h2 className="text-xl md:text-2xl text-slate-300 font-sans font-medium">
-                                Antes de investir em anúncios, agência ou qualquer ação digital, você precisa entender o que faz sentido para o seu negócio agora.
-                            </h2>
-                            <p className="mt-4 text-lg text-slate-400">
-                                A maioria dos negócios perde tempo e dinheiro tentando “fazer marketing” sem saber <strong className="text-white">onde investir, o que priorizar e o que parar de fazer.</strong>
-                            </p>
-                            <div className="mt-10">
-                                <CTAButton href="#oferta" size="large">
-                                    Quero clareza no meu marketing
-                                </CTAButton>
-                            </div>
-                        </FadeIn>
-                    </div>
-
-                    {/* Right Column: Image */}
-                    <div className="flex justify-center lg:justify-end order-first lg:order-last">
-                         <FadeIn>
-                            <img
-                                alt="Ramon Bordoni, Estrategista e Growth Hacker"
-                                className="h-auto w-full max-w-md lg:max-w-lg object-contain filter drop-shadow-2xl"
-                                src={RAMON_PHOTO_BASE64}
-                            />
-                        </FadeIn>
-                    </div>
-                </div>
             </div>
-        </section>
+
+            {/* Subtext and CTA - Below the Headline (Mobile) / Near the Photo (Desktop) */}
+            <div className="text-center py-10 md:py-16 relative z-50 lg:text-left lg:max-w-xl lg:my-auto">
+                <FadeIn>
+                    <div className="space-y-6">
+                        <h2 className="text-xl md:text-2xl text-slate-300/80 font-sans font-medium leading-relaxed">
+                            Antes de investir em <span className="font-bold text-white">anúncios</span>, <span className="font-bold text-white">agência</span> ou qualquer <span className="font-bold text-white">ação digital</span>, você precisa entender o que faz sentido para o seu negócio <span className="font-bold text-white">agora</span>.
+                        </h2>
+                        <p className="text-lg md:text-xl text-slate-400/80 italic">
+                            A maioria dos negócios perde tempo e dinheiro tentando “fazer marketing” sem saber <strong className="text-white not-italic">onde investir, o que priorizar e o que parar de fazer.</strong>
+                        </p>
+                    </div>
+                    <div className="mt-10">
+                        <CTAButton href="#oferta" size="large" className="drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
+                            Quero clareza no meu marketing
+                        </CTAButton>
+                    </div>
+                </FadeIn>
+            </div>
+        </div>
     </header>
 );
 
@@ -129,7 +138,7 @@ const MarketingDecisionSection = () => (
                 <p className="mt-10 text-center text-2xl font-serif text-white italic">
                     Quem pula essa etapa, <strong className="text-amber-400">executa mais… e cresce menos.</strong>
                 </p>
-                 <div className="mt-12 text-center">
+                <div className="mt-12 text-center">
                     <a href="#como-funciona" className="inline-block font-sans font-semibold text-white bg-teal-primary hover:bg-teal-dark rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 px-8 py-3 text-lg">
                         Quero organizar meu marketing
                     </a>
@@ -184,7 +193,7 @@ const ProcessSection = () => (
                         </div>
                     </div>
                     <div className="flex justify-center items-center">
-                        <img alt="Estratégia e Análise" className="rounded-lg shadow-xl" src="https://picsum.photos/seed/strategy/800/600" />
+                        <img alt="Estratégia e Análise" className="rounded-lg shadow-xl" src="/img/eu-notebook-icons.jpg" />
                     </div>
                 </div>
             </FadeIn>
@@ -204,14 +213,14 @@ const BeforeAfterSection = () => (
                     Quando não existe plano, qualquer ação parece a solução
                 </h2>
                 <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-                    <img 
-                        src="https://i.ibb.co/L66Jv4Z/image-1.jpg" 
-                        alt="Cenário atual de marketing sem plano, mostrando frustração e resultados ruins." 
+                    <img
+                        src="/img/CASO1-CONSULTORIA-XPRESS.jpg"
+                        alt="Cenário atual de marketing sem plano, mostrando frustração e resultados ruins."
                         className="rounded-lg shadow-xl w-full h-auto"
                     />
-                    <img 
-                        src="https://i.ibb.co/3WVSdzt/image-2.jpg" 
-                        alt="Cenário de marketing após o plano X-Press, mostrando clareza e resultados positivos." 
+                    <img
+                        src="/img/CASO2-CONSULTORIA-XPRESS.jpg"
+                        alt="Cenário de marketing após o plano X-Press, mostrando clareza e resultados positivos."
                         className="rounded-lg shadow-xl w-full h-auto"
                     />
                 </div>
@@ -221,7 +230,7 @@ const BeforeAfterSection = () => (
 );
 
 const XPressConsultancySection = () => (
-    <section className="py-16 sm:py-20 md:py-24 bg-teal-dark text-white relative bg-cover bg-center" style={{ backgroundImage: `url(https://picsum.photos/seed/light-reveal/1920/1080)`}}>
+    <section className="py-16 sm:py-20 md:py-24 bg-teal-dark text-white relative bg-cover bg-center" style={{ backgroundImage: `url(https://picsum.photos/seed/light-reveal/1920/1080)` }}>
         <div className="absolute inset-0 bg-gradient-to-br from-teal-dark/90 via-teal-dark/80 to-teal-primary/80"></div>
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
             <FadeIn>
@@ -242,7 +251,7 @@ const XPressConsultancySection = () => (
 
 const HowItWorksSection = () => (
     <section id="como-funciona" className="py-16 sm:py-20 md:py-24 bg-white relative">
-         <div 
+        <div
             className="absolute inset-0 z-0"
             style={{ backgroundImage: `url("${WEB_BG_SVG_BASE64}")`, backgroundRepeat: 'repeat', opacity: 0.3 }}
         ></div>
@@ -347,7 +356,7 @@ const DisclaimerSection = () => (
 
 const AboutMeSection = () => (
     <section className="py-16 sm:py-20 md:py-24 bg-smoke relative">
-        <div 
+        <div
             className="absolute inset-0 z-0"
             style={{ backgroundImage: `url("${WEB_BG_SVG_BASE64}")`, backgroundRepeat: 'repeat', opacity: 0.5 }}
         ></div>
@@ -355,7 +364,7 @@ const AboutMeSection = () => (
             <FadeIn>
                 <div className="grid lg:grid-cols-5 gap-12 items-center">
                     <div className="lg:col-span-2 flex justify-center">
-                        <img alt="Ramon Bordoni" className="rounded-lg w-64 h-64 md:w-80 md:h-80 object-cover shadow-xl" src="https://picsum.photos/seed/ramonbordoni-2/500/500" />
+                        <img alt="Ramon Bordoni" className="rounded-lg w-64 h-64 md:w-80 md:h-80 object-cover shadow-xl" src="/img/eu-pc.png" />
                     </div>
                     <div className="lg:col-span-3">
                         <h2 className="font-serif text-3xl text-graphite">Sou <span className="text-teal-primary">Ramon Bordoni</span>, estrategista de marketing digital.</h2>
@@ -403,7 +412,7 @@ const OfferSection = () => (
     <section id="oferta" className="py-16 sm:py-20 md:py-24 bg-smoke">
         <div className="container mx-auto px-6 max-w-7xl">
             <FadeIn>
-                <div className="bg-graphite text-white p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl mx-auto relative overflow-hidden bg-cover bg-center" style={{backgroundImage: `url(https://picsum.photos/seed/growth-chart/1200/800)`}}>
+                <div className="bg-graphite text-white p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl mx-auto relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url(https://picsum.photos/seed/growth-chart/1200/800)` }}>
                     <div className="absolute inset-0 bg-gradient-to-br from-graphite/90 to-slate-800/90"></div>
                     <div className="relative z-10">
                         <div className="text-center mb-10">
@@ -482,7 +491,7 @@ const FaqSection = () => (
                             <p>Não. Ela é muito mais prática e direta. O que você vai receber é um plano de ação estratégico e aplicável, não um documento de 20 páginas cheio de teoria. Eu realmente mergulho no seu negócio, pesquiso o mercado, analiso seu posicionamento e valido algumas hipóteses pra entregar um direcionamento com consistência. Mas tudo de forma objetiva, personalizada e voltada pra gerar resultado rápido.</p>
                         </FaqItem>
                         <FaqItem question="“É uma consultoria em grupo?”">
-                           <p>Não, é individual e personalizada. A consultoria é feita 1 a 1, comigo, em um formato enxuto e direto. Você não vai cair em um grupo genérico, nem receber respostas automáticas. É uma conversa estratégica pra entender onde o seu negócio está travando e o que precisa mudar.</p>
+                            <p>Não, é individual e personalizada. A consultoria é feita 1 a 1, comigo, em um formato enxuto e direto. Você não vai cair em um grupo genérico, nem receber respostas automáticas. É uma conversa estratégica pra entender onde o seu negócio está travando e o que precisa mudar.</p>
                         </FaqItem>
                         <FaqItem question="“O que exatamente eu recebo?”">
                             <p>Você recebe:</p>
@@ -494,13 +503,13 @@ const FaqSection = () => (
                             <p className="mt-4">É uma consultoria rápida, mas com intensidade. Eu realmente coloco energia pra entender o seu negócio e te devolver um plano sólido.</p>
                         </FaqItem>
                         <FaqItem question="“Qual o prazo de entrega?”">
-                           <p>Entre 3 e 5 dias úteis após o preenchimento do briefing. Nesse período, eu faço a análise, crio o plano e agendamos a call pra apresentar tudo.</p>
+                            <p>Entre 3 e 5 dias úteis após o preenchimento do briefing. Nesse período, eu faço a análise, crio o plano e agendamos a call pra apresentar tudo.</p>
                         </FaqItem>
                         <FaqItem question="“E se eu quiser te contratar pra executar depois?”">
                             <p>Perfeito — é o caminho ideal. A X-Press é justamente o primeiro passo antes da execução. Depois que você tiver o plano validado, posso assumir o tráfego pago, automações, funil, CRM, Google Meu Negócio, gestão de influenciadores ou o que fizer mais sentido.</p>
                             <p>A ideia é simples: primeiro, clareza. Depois, ação.</p>
                         </FaqItem>
-                         <FaqItem question="“Por que a Consultoria X-Press custa só R$97?”">
+                        <FaqItem question="“Por que a Consultoria X-Press custa só R$97?”">
                             <p>Porque é o valor de lançamento e validação do formato. Normalmente, uma consultoria personalizada desse tipo custaria R$247 ou mais, mas decidi liberar um valor simbólico por tempo limitado. É uma forma de você testar a metodologia, ganhar visão de negócio e sair com um plano pronto — gastando pouco e com orientação de quem já vive o marketing na prática.</p>
                         </FaqItem>
                         <FaqItem question="“Você trabalha só com empresas pequenas?”">
@@ -510,8 +519,8 @@ const FaqSection = () => (
                             <p>Serve — e talvez seja o melhor ponto de partida. Se você está começando e quer entender como atrair, converter e fidelizar clientes, a consultoria vai te dar o mapa. Você não precisa de uma agência cara agora. Precisa de direção certa, e é isso que a X-Press entrega.</p>
                         </FaqItem>
                         <FaqItem question="“Vou começar um negócio do zero agora. Você pode me ajudar?”">
-                             <p>Sim! Inclusive, a X-Press é o caminho mais seguro para quem está começando. O maior erro de quem tira um projeto do papel é gastar energia e verba nos canais errados. Na consultoria, eu vou te entregar um plano de ação prático para que seu investimento inicial — seja ele pequeno ou robusto — seja direcionado para onde traz retorno real. Vamos estruturar sua comunicação e definir os canais de venda que fazem mais sentido para o seu cenário atual.</p>
-                             <p>O objetivo aqui não é "gastar pouco", mas sim investir com inteligência para que você não precise contar com a sorte nas suas primeiras vendas.</p>
+                            <p>Sim! Inclusive, a X-Press é o caminho mais seguro para quem está começando. O maior erro de quem tira um projeto do papel é gastar energia e verba nos canais errados. Na consultoria, eu vou te entregar um plano de ação prático para que seu investimento inicial — seja ele pequeno ou robusto — seja direcionado para onde traz retorno real. Vamos estruturar sua comunicação e definir os canais de venda que fazem mais sentido para o seu cenário atual.</p>
+                            <p>O objetivo aqui não é "gastar pouco", mas sim investir com inteligência para que você não precise contar com a sorte nas suas primeiras vendas.</p>
                         </FaqItem>
                     </div>
                 </div>
