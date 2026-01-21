@@ -15,7 +15,7 @@ export const CTAButton: React.FC<CTAButtonProps> = ({ children, size = 'normal',
     return (
         <a
             {...props}
-            className={`inline-flex items-center justify-center font-sans font-bold text-white bg-brand-amber hover:bg-brand-amber-light rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-amber-light ${sizeClasses} ${className || ''}`}
+            className={`inline-flex items-center justify-center font-sans font-bold text-white bg-brand-amber hover:bg-brand-amber-light rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-amber-light w-full sm:w-auto ${sizeClasses} ${className || ''}`}
         >
             {showIcon && <WhatsAppIcon className="w-5 h-5 mr-3" />}
             {children}

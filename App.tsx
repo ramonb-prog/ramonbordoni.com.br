@@ -419,8 +419,8 @@ const OfferSection = () => (
                             <h3 className="text-xl md:text-2xl font-bold text-amber-400">💥 Oferta de Lançamento (por tempo limitado)</h3>
                             <p className="mt-2 text-slate-300 text-base md:text-lg">Garanta sua vaga com o valor especial e receba um plano de ação completo:</p>
                         </div>
-                        <div className="grid md:grid-cols-2 gap-10 items-center">
-                            <ul className="space-y-3 text-base md:text-lg text-slate-200">
+                        <div className="grid md:grid-cols-2 gap-10 items-center justify-items-center">
+                            <ul className="space-y-3 text-base md:text-lg text-slate-200 w-full">
                                 <li className="flex items-start"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary flex-shrink-0 mt-1" /><span>Direção estratégica de marketing e vendas no digital</span></li>
                                 <li className="flex items-start"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary flex-shrink-0 mt-1" /><span>Plano de ação prático em PDF</span></li>
                                 <li className="flex items-start"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary flex-shrink-0 mt-1" /><span>Apresentação do plano de ação ao vivo</span></li>
@@ -428,10 +428,10 @@ const OfferSection = () => (
                                 <li className="flex items-start"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary flex-shrink-0 mt-1" /><span>Tira dúvidas</span></li>
                                 <li className="flex items-start"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary flex-shrink-0 mt-1" /><span>Direção pontual de ações de marketing</span></li>
                             </ul>
-                            <div className="bg-slate-900/50 p-8 rounded-lg text-center border border-slate-700">
-                                <p className="text-2xl text-slate-400 line-through">De R$247</p>
-                                <p className="text-6xl font-bold text-white mt-1">por apenas R$97</p>
-                                <div className="mt-8">
+                            <div className="bg-slate-900/50 p-6 sm:p-8 rounded-lg text-center border border-slate-700 w-full max-w-sm">
+                                <p className="text-xl md:text-2xl text-slate-400 line-through">De R$247</p>
+                                <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-1">por apenas R$97</p>
+                                <div className="mt-8 flex justify-center">
                                     <CTAButton
                                         href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Consultoria%20X-Press%20e%20gostaria%20de%20saber%20mais."
                                         target="_blank"
