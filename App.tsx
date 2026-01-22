@@ -68,7 +68,7 @@ const HeroHeader = () => (
                         </p>
                     </div>
                     <div className="mt-10">
-                        <CTAButton href="#oferta" size="large" className="drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
+                        <CTAButton href="#cenarios" size="large" className="drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
                             Quero clareza no meu marketing
                         </CTAButton>
                     </div>
@@ -79,7 +79,7 @@ const HeroHeader = () => (
 );
 
 const ProblemScenariosSection = () => (
-    <section className="py-16 sm:py-20 md:py-24 bg-white">
+    <section id="cenarios" className="py-16 sm:py-20 md:py-24 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
             <FadeIn>
                 <h2 className="font-serif text-3xl md:text-4xl text-center text-teal-dark font-bold">
@@ -240,7 +240,7 @@ const XPressConsultancySection = () => (
                     <div className="mt-10 text-base md:text-lg space-y-2 text-teal-200">
                         <p>Não é um curso.</p>
                         <p>Não é uma mentoria longa.</p>
-                        <p>Não é um plano de negócios de 30 páginas.</p>
+                        <p>Não é um plano de negócios de 100 páginas.</p>
                     </div>
                     <p className="mt-8 text-xl md:text-2xl font-bold bg-white text-teal-dark py-4 px-6 rounded-lg shadow-2xl">É um diagnóstico + plano de ação, feito sob medida para o seu negócio.</p>
                 </div>
@@ -429,7 +429,7 @@ const OfferSection = () => (
                                 <li className="flex items-start"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary flex-shrink-0 mt-1" /><span>Tira dúvidas</span></li>
                                 <li className="flex items-start"><CheckIcon className="w-6 h-6 mr-3 text-teal-primary flex-shrink-0 mt-1" /><span>Direção pontual de ações de marketing</span></li>
                             </ul>
-                            <div className="bg-slate-900/50 p-6 sm:p-8 rounded-lg text-center border border-slate-700 w-full max-w-sm">
+                            <div className="bg-slate-900/50 p-6 sm:p-8 rounded-lg text-center border border-slate-700 w-full max-w-md">
                                 <p className="text-xl md:text-2xl text-slate-400 line-through">De R$247</p>
                                 <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-1">por apenas R$97</p>
                                 <div className="mt-8 flex justify-center">
@@ -439,6 +439,7 @@ const OfferSection = () => (
                                         rel="noopener noreferrer"
                                         size="large"
                                         showIcon={true}
+                                        className="md:text-base"
                                     >
                                         QUERO A CONSULTORIA X-PRESS
                                     </CTAButton>
