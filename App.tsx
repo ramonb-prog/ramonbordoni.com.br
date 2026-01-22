@@ -83,7 +83,7 @@ const ProblemScenariosSection = () => (
         <div className="container mx-auto px-6 max-w-7xl">
             <FadeIn>
                 <h2 className="font-serif text-3xl md:text-4xl text-center text-teal-dark font-bold">
-                    Talvez você se reconheça em pelo menos um desses cenários:
+                    Talvez você se reconheça em pelo menos <span className="bg-gradient-to-r from-[#008080] to-[#5FB3B3] bg-clip-text text-transparent inline-block" style={{ backgroundImage: 'linear-gradient(110deg, #008080, #5FB3B3)' }}>um desses cenários</span>:
                 </h2>
                 <div className="mt-12 grid md:grid-cols-2 gap-6 text-slate-700 text-base md:text-lg">
                     <div className="bg-smoke p-6 rounded-lg shadow-sm">– Já pensou em contratar um gestor de tráfego, mas não sabe se é a hora certa</div>
@@ -118,7 +118,7 @@ const MarketingDecisionSection = () => (
                 <div className="text-center">
                     <p className="text-base md:text-lg text-slate-300">Pouca gente fala isso, mas é a verdade:</p>
                     <h2 className="font-serif text-4xl md:text-5xl mt-4 text-white">
-                        Marketing não começa com anúncios. <br /><span className="text-amber-400">Começa com decisão.</span>
+                        Marketing não começa com anúncios. <br /><span className="bg-gradient-to-r from-[#FBBF24] to-[#FCD34D] bg-clip-text text-transparent inline-block" style={{ backgroundImage: 'linear-gradient(110deg, #FBBF24, #FCD34D)' }}>Começa com decisão.</span>
                     </h2>
                     <p className="mt-8 max-w-2xl mx-auto text-base md:text-lg text-slate-200">
                         Empresas que crescem não testam tudo. Elas <strong className="text-white">priorizam certo.</strong>
@@ -153,7 +153,7 @@ const LookingForSection = () => (
         <div className="container mx-auto px-6 max-w-7xl">
             <FadeIn>
                 <div className="text-center max-w-3xl mx-auto">
-                    <h2 className="font-serif text-3xl md:text-4xl text-center text-teal-dark font-bold">Se você chegou até aqui procurando por:</h2>
+                    <h2 className="font-serif text-3xl md:text-4xl text-center text-teal-dark font-bold">Se você chegou até aqui <span className="bg-gradient-to-r from-[#008080] to-[#5FB3B3] bg-clip-text text-transparent inline-block" style={{ backgroundImage: 'linear-gradient(110deg, #008080, #5FB3B3)' }}>procurando por</span>:</h2>
                     <div className="flex flex-wrap justify-center gap-4 mt-8 text-teal-dark">
                         <span className="bg-teal-primary/10 py-2 px-4 rounded-full font-medium">gestor de tráfego</span>
                         <span className="bg-teal-primary/10 py-2 px-4 rounded-full font-medium">agência de marketing</span>
@@ -210,7 +210,7 @@ const BeforeAfterSection = () => (
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
             <FadeIn>
                 <h2 className="font-serif text-3xl md:text-4xl text-center text-teal-dark font-bold mb-12">
-                    Quando não existe plano, qualquer ação parece a solução
+                    Quando não existe plano, <span className="bg-gradient-to-r from-[#008080] to-[#5FB3B3] bg-clip-text text-transparent inline-block" style={{ backgroundImage: 'linear-gradient(110deg, #008080, #5FB3B3)' }}>qualquer ação parece a solução</span>
                 </h2>
                 <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
                     <img
@@ -302,7 +302,7 @@ const HowItWorksSection = () => (
 
 const DeliverablesSection = () => (
     <section className="py-16 sm:py-20 md:py-24 relative bg-cover bg-center" style={{ backgroundImage: `url("https://picsum.photos/seed/clarity-path/1920/1080")` }}>
-        <div className="absolute inset-0 bg-smoke/80"></div>
+        <div className="absolute inset-0 bg-slate-900/90 backdrop-blur-sm"></div>
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
             <FadeIn>
                 <div className="bg-white/90 backdrop-blur-sm p-8 md:p-12 rounded-lg shadow-xl">
@@ -355,10 +355,10 @@ const DisclaimerSection = () => (
 );
 
 const AboutMeSection = () => (
-    <section className="py-16 sm:py-20 md:py-24 bg-smoke relative">
+    <section className="py-16 sm:py-20 md:py-24 bg-smoke relative overflow-hidden">
         <div
             className="absolute inset-0 z-0"
-            style={{ backgroundImage: `url("${WEB_BG_SVG_BASE64}")`, backgroundRepeat: 'repeat', opacity: 0.5 }}
+            style={{ backgroundImage: `url("${WEB_BG_SVG_BASE64}")`, backgroundRepeat: 'repeat', opacity: 0.4 }}
         ></div>
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
             <FadeIn>
@@ -409,14 +409,15 @@ const ImplementationSection = () => (
 );
 
 const OfferSection = () => (
-    <section id="oferta" className="py-16 sm:py-20 md:py-24 bg-smoke">
-        <div className="container mx-auto px-6 max-w-7xl">
+    <section id="oferta" className="py-16 sm:py-20 md:py-24 bg-graphite relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: 'url("/img/offer-section-bg.png")' }}>
+        <div className="absolute inset-0 bg-graphite/80 backdrop-blur-sm"></div>
+        <div className="container mx-auto px-6 max-w-7xl relative z-10">
             <FadeIn>
-                <div className="bg-graphite text-white p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl mx-auto relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url(https://picsum.photos/seed/growth-chart/1200/800)` }}>
-                    <div className="absolute inset-0 bg-gradient-to-br from-graphite/90 to-slate-800/90"></div>
+                <div className="bg-graphite text-white p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl mx-auto relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: 'url("/img/offer-bg.png")' }}>
+                    <div className="absolute inset-0 bg-black/60"></div>
                     <div className="relative z-10">
                         <div className="text-center mb-10">
-                            <h3 className="text-xl md:text-2xl font-bold text-amber-400">💥 Oferta de Lançamento (por tempo limitado)</h3>
+                            <h3 className="text-xl md:text-2xl font-bold text-amber-400">💥 Oferta de <span className="bg-gradient-to-r from-[#FBBF24] to-[#FDE68A] bg-clip-text text-transparent inline-block" style={{ backgroundImage: 'linear-gradient(110deg, #FBBF24, #FDE68A)' }}>Lançamento</span> (por tempo limitado)</h3>
                             <p className="mt-2 text-slate-300 text-base md:text-lg">Garanta sua vaga com o valor especial e receba um plano de ação completo:</p>
                         </div>
                         <div className="grid md:grid-cols-2 gap-10 items-center justify-items-center">
@@ -456,7 +457,7 @@ const FinalCTASection = () => (
         <div className="container mx-auto px-6 max-w-7xl">
             <FadeIn>
                 <div className="text-center max-w-2xl mx-auto">
-                    <h2 className="font-serif text-4xl md:text-5xl text-graphite">Se você quer parar de adivinhar e começar a <span className="text-teal-primary">decidir com estratégia</span>,</h2>
+                    <h2 className="font-serif text-4xl md:text-5xl text-graphite">Se você quer parar de adivinhar e começar a <span className="bg-gradient-to-r from-[#008080] to-[#5FB3B3] bg-clip-text text-transparent inline-block" style={{ backgroundImage: 'linear-gradient(110deg, #008080, #5FB3B3)' }}>decidir com estratégia</span>,</h2>
                     <p className="mt-6 text-base md:text-lg text-slate-600">👇 clique abaixo e fale comigo no WhatsApp:</p>
                     <div className="mt-10">
                         <CTAButton
@@ -481,7 +482,9 @@ const FaqSection = () => (
         <div className="container mx-auto px-6 max-w-7xl">
             <FadeIn>
                 <div className="max-w-3xl mx-auto">
-                    <h2 className="font-serif text-3xl md:text-4xl text-center text-teal-dark font-bold">Dúvidas Frequentes sobre a Consultoria X-Press</h2>
+                    <h2 className="font-serif text-3xl md:text-4xl text-center text-teal-dark font-bold">
+                        <span className="bg-gradient-to-r from-[#008080] to-[#5FB3B3] bg-clip-text text-transparent inline-block" style={{ backgroundImage: 'linear-gradient(110deg, #008080, #5FB3B3)' }}>Perguntas Frequentes sobre a Consultoria X-Press</span>
+                    </h2>
                     <div className="mt-12 space-y-4">
                         <FaqItem question="“Quero um gestor de tráfego. Você faz isso?”">
                             <p>Sim! Mas antes de colocar dinheiro em anúncios, é importante ter clareza sobre o que comunicar, pra quem e com qual objetivo. É por isso que recomendo começar pela Consultoria X-Press — ela funciona como um diagnóstico estratégico, ideal pra quem ainda não tem processos claros entre marketing e vendas. Depois dela, posso sim atuar como gestor de tráfego ou coordenar a execução completa, se fizer sentido pro seu caso.</p>
