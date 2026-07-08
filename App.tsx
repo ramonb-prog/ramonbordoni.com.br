@@ -431,7 +431,7 @@ const OfferSection = () => (
                             </ul>
                             <div className="bg-slate-900/50 p-6 sm:p-8 rounded-lg text-center border border-slate-700 w-full max-w-md">
                                 <p className="text-xl md:text-2xl text-slate-400 line-through">De R$247</p>
-                                <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-1">por apenas R$97</p>
+                                <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-1">por apenas R$147</p>
                                 <div className="mt-8 flex justify-center">
                                     <CTAButton
                                         href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Consultoria%20X-Press%20e%20gostaria%20de%20saber%20mais."
@@ -513,7 +513,7 @@ const FaqSection = () => (
                             <p>Perfeito — é o caminho ideal. A X-Press é justamente o primeiro passo antes da execução. Depois que você tiver o plano validado, posso assumir o tráfego pago, automações, funil, CRM, Google Meu Negócio, gestão de influenciadores ou o que fizer mais sentido.</p>
                             <p>A ideia é simples: primeiro, clareza. Depois, ação.</p>
                         </FaqItem>
-                        <FaqItem question="“Por que a Consultoria X-Press custa só R$97?”">
+                        <FaqItem question="“Por que a Consultoria X-Press custa só R$147?”">
                             <p>Porque é o valor de lançamento e validação do formato. Normalmente, uma consultoria personalizada desse tipo custaria R$247 ou mais, mas decidi liberar um valor simbólico por tempo limitado. É uma forma de você testar a metodologia, ganhar visão de negócio e sair com um plano pronto — gastando pouco e com orientação de quem já vive o marketing na prática.</p>
                         </FaqItem>
                         <FaqItem question="“Você trabalha só com empresas pequenas?”">
