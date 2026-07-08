@@ -18,7 +18,7 @@ const HeroHeader = () => (
         <div
             className="absolute inset-0 z-0 bg-cover bg-center"
             style={{
-                backgroundImage: 'url("/img/background2-hero-xpress.png")'
+                backgroundImage: `url("${import.meta.env.BASE_URL}img/background2-hero-xpress.png")`
             }}
         ></div>
 
@@ -50,7 +50,7 @@ const HeroHeader = () => (
                         <img
                             alt="Ramon Bordoni, Estrategista e Growth Hacker"
                             className="h-auto w-full object-contain filter drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)] mix-blend-normal scale-110 origin-top lg:scale-100"
-                            src="/img/Ramon-Bordoni-Hero-XPress.png"
+                            src={`${import.meta.env.BASE_URL}img/Ramon-Bordoni-Hero-XPress.png`}
                         />
                     </div>
                 </FadeIn>
@@ -193,7 +193,7 @@ const ProcessSection = () => (
                         </div>
                     </div>
                     <div className="flex justify-center items-center">
-                        <img alt="Estratégia e Análise" className="rounded-lg shadow-xl" src="/img/eu-notebook-icons.jpg" />
+                        <img alt="Estratégia e Análise" className="rounded-lg shadow-xl" src={`${import.meta.env.BASE_URL}img/eu-notebook-icons.jpg`} />
                     </div>
                 </div>
             </FadeIn>
@@ -214,12 +214,12 @@ const BeforeAfterSection = () => (
                 </h2>
                 <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
                     <img
-                        src="/img/CASO1-CONSULTORIA-XPRESS.jpg"
+                        src={`${import.meta.env.BASE_URL}img/CASO1-CONSULTORIA-XPRESS.jpg`}
                         alt="Cenário atual de marketing sem plano, mostrando frustração e resultados ruins."
                         className="rounded-lg shadow-xl w-full h-auto"
                     />
                     <img
-                        src="/img/CASO2-CONSULTORIA-XPRESS.jpg"
+                        src={`${import.meta.env.BASE_URL}img/CASO2-CONSULTORIA-XPRESS.jpg`}
                         alt="Cenário de marketing após o plano X-Press, mostrando clareza e resultados positivos."
                         className="rounded-lg shadow-xl w-full h-auto"
                     />
@@ -364,7 +364,7 @@ const AboutMeSection = () => (
             <FadeIn>
                 <div className="grid lg:grid-cols-5 gap-12 items-center">
                     <div className="lg:col-span-2 flex justify-center">
-                        <img alt="Ramon Bordoni" className="rounded-lg w-64 h-64 md:w-80 md:h-80 object-cover shadow-xl" src="/img/eu-pc.png" />
+                        <img alt="Ramon Bordoni" className="rounded-lg w-64 h-64 md:w-80 md:h-80 object-cover shadow-xl" src={`${import.meta.env.BASE_URL}img/eu-pc.png`} />
                     </div>
                     <div className="lg:col-span-3">
                         <h2 className="font-serif text-2xl md:text-3xl text-graphite">Sou <span className="text-teal-primary">Ramon Bordoni</span>, estrategista de marketing digital.</h2>
@@ -409,11 +409,11 @@ const ImplementationSection = () => (
 );
 
 const OfferSection = () => (
-    <section id="oferta" className="py-16 sm:py-20 md:py-24 bg-graphite relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: 'url("/img/offer-section-bg.png")' }}>
+    <section id="oferta" className="py-16 sm:py-20 md:py-24 bg-graphite relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url("${import.meta.env.BASE_URL}img/offer-section-bg.png")` }}>
         <div className="absolute inset-0 bg-graphite/80 backdrop-blur-sm"></div>
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
             <FadeIn>
-                <div className="bg-graphite text-white p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl mx-auto relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: 'url("/img/offer-bg.png")' }}>
+                <div className="bg-graphite text-white p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl mx-auto relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url("${import.meta.env.BASE_URL}img/offer-bg.png")` }}>
                     <div className="absolute inset-0 bg-black/60"></div>
                     <div className="relative z-10">
                         <div className="text-center mb-10">
