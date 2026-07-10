@@ -49,8 +49,7 @@ const HeroHeader = () => (
                     }}>
                         <img
                             alt="Ramon Bordoni, Estrategista e Growth Hacker"
-                            className="h-auto w-full object-contain filter drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)] mix-blend-normal scale-110 origin-top lg:scale-100"
-                            src={`${import.meta.env.BASE_URL}img/Ramon-Bordoni-Hero-XPress.png`}
+className="h-auto w-full lg:w-auto lg:max-w-full lg:max-h-[70vh] xl:max-h-[75vh] object-contain filter drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)] mix-blend-normal scale-110 origin-top lg:scale-100"                            src={`${import.meta.env.BASE_URL}img/Ramon-Bordoni-Hero-XPress.png`}
                         />
                     </div>
                 </FadeIn>
