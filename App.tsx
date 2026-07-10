@@ -433,7 +433,7 @@ const OfferSection = () => (
                                 <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-1">por apenas R$147</p>
                                 <div className="mt-8 flex justify-center">
                                     <CTAButton
-                                        href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Consultoria%20X-Press%20e%20gostaria%20de%20saber%20mais."
+                                        href="https://wa.me/5592984807714?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Consultoria%20X-Press%20e%20gostaria%20de%20saber%20mais."
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         size="large"
@@ -461,7 +461,7 @@ const FinalCTASection = () => (
                     <p className="mt-6 text-base md:text-lg text-slate-600">👇 clique abaixo e fale comigo no WhatsApp:</p>
                     <div className="mt-10">
                         <CTAButton
-                            href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Consultoria%20X-Press%20e%20gostaria%20de%20saber%20mais."
+                            href="https://wa.me/5592984807714?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Consultoria%20X-Press%20e%20gostaria%20de%20saber%20mais."
                             target="_blank"
                             rel="noopener noreferrer"
                             size="large"
