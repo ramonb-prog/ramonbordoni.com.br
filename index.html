@@ -1,51 +1,421 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Consultoria X-Press | Ramon Bordoni</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      html {
-        scroll-behavior: smooth;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, viewport-fit=contain">
+  <title>Ramon Bordoni | Consultor de Marketing Digital</title>
+  <meta name="description" content="Ramon Bordoni: Consultor de Marketing Digital | Funis | Tráfego | Copy. Acesse meus links: Precisa de ajuda?, Portfólio, LinkedIn, WhatsApp.">
+  <meta property="og:title" content="Ramon Bordoni | Consultor de Marketing Digital">
+  <meta property="og:description" content="Ramon Bordoni: Consultor de Marketing Digital | Funis | Tráfego | Copy.">
+  <meta property="og:url" content="https://ramonbordoni.com.br">
+  <meta property="og:image" content="https://cdn.beacons.ai/user_content/apD0zA6A4XVKrI49F3MXxzJ5xLW2/profile_ramonbordoni.png?q=1741317646.96834">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@ramonbordoni">
+  <meta name="twitter:title" content="Ramon Bordoni | Consultor de Marketing Digital">
+  <meta name="twitter:image" content="https://cdn.beacons.ai/user_content/apD0zA6A4XVKrI49F3MXxzJ5xLW2/profile_ramonbordoni.png?q=1741317646.96834">
+  <link rel="icon" href="https://cdn.beacons.ai/user_content/apD0zA6A4XVKrI49F3MXxzJ5xLW2/profile_ramonbordoni.png?q=1741317646.96834" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* ── Full-screen background ── */
+    body {
+      background-color: #000;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.95)),
+        url('https://images.pexels.com/photos/7181178/pexels-photo-7181178.jpeg?auto=compress&fit=max&h=1080');
+      background-position: 50% 15%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── Centering wrapper ── */
+    .page-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 0 0 60px;
+    }
+
+    /* ── Card ── */
+    .card {
+      width: 100%;
+      max-width: 430px;
+      padding: 0 20px 40px;
+    }
+
+    /* ── Share button (top-right) ── */
+    .share-btn-row {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 16px;
+    }
+
+    .share-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: #f3f4f6;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.2s;
+      z-index: 50;
+    }
+    .share-btn:hover { opacity: 0.7; }
+    .share-btn svg { color: #374151; }
+
+    /* ── Banner + avatar block ── */
+    .banner-block {
+      margin: 0 -20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 16px;
+    }
+
+    .banner-img {
+      width: 100%;
+      aspect-ratio: 2 / 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .avatar-row {
+      display: flex;
+      margin-top: -48px;
+      padding-left: 20px;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 2px solid #fffffe;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ── Profile info ── */
+    .profile-info {
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    .profile-name {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: clamp(28px, 7vw, 36px);
+      color: #fffffe;
+      line-height: 1.2;
+      padding: 0 20px;
+    }
+
+    .profile-bio {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: #fffffe;
+      margin-top: 8px;
+      padding: 0 32px;
+    }
+
+    /* ── Social icons row ── */
+    .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8px;
+      gap: 0;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fffffe;
+      text-decoration: none;
+      padding: 8px;
+      transition: opacity 0.2s;
+    }
+    .social-icons a:hover { opacity: 0.75; }
+    .social-icons svg {
+      width: 28px;
+      height: 28px;
+      fill: #fffffe;
+    }
+
+    /* ── Link buttons section ── */
+    .links-section {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Pulsing animation for first button */
+    @keyframes pulse-ring {
+      0%   { box-shadow: 0 0 0 0 rgba(255,255,254,0.5); }
+      70%  { box-shadow: 0 0 0 8px rgba(255,255,254,0); }
+      100% { box-shadow: 0 0 0 0 rgba(255,255,254,0); }
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-height: 65px;
+      padding: 8px;
+      border-radius: 10px;
+      background-color: rgb(116, 118, 140);
+      color: #fffffe;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      text-decoration: none;
+      border: 2px solid #fffffe;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    .link-btn:hover {
+      opacity: 0.88;
+      transform: translateY(-1px);
+    }
+    .link-btn:active {
+      transform: translateY(0);
+    }
+
+    .link-btn.pulse {
+      animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    }
+
+    .link-btn-icon {
+      width: 56px;
+      min-width: 56px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+    }
+
+    .link-btn-icon img {
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .link-btn-text {
+      flex: 1;
+      min-width: 0;
+      text-align: left;
+    }
+
+    .link-btn-title {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.3;
+      white-space: pre-wrap;
+    }
+
+    .link-btn-subtitle {
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.85;
+      line-height: 1.3;
+    }
+
+    /* ── Responsive adjustments ── */
+    @media (min-width: 600px) {
+      .banner-img {
+        border-radius: 8px;
       }
-    </style>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              serif: ['"DM Serif Display"', 'serif'],
-              sans: ['Poppins', 'sans-serif'],
-            },
-            colors: {
-              'teal-primary': '#0d9488',
-              'teal-dark': '#115e59',
-              'brand-amber': '#b45309',
-              'brand-amber-light': '#d97706',
-              'graphite': '#1e293b',
-              'smoke': '#f8fafc',
-            }
-          }
-        }
+      .share-btn-row {
+        padding-top: 64px;
       }
-    </script>
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
-  }
-}
-</script>
+    }
+  </style>
 </head>
-<body class="bg-smoke font-sans text-graphite antialiased">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+<body>
+  <div class="page-wrapper">
+    <div class="card">
+
+      <!-- Share button -->
+      <div class="share-btn-row">
+        <button class="share-btn" onclick="handleShare()" aria-label="Compartilhar perfil">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#374151" viewBox="0 0 256 256">
+            <path d="M176,160a39.89,39.89,0,0,0-28.62,12.09l-46.1-29.63a39.8,39.8,0,0,0,0-28.92l46.1-29.63a40,40,0,1,0-8.66-13.45l-46.1,29.63a40,40,0,1,0,0,55.82l46.1,29.63A40,40,0,1,0,176,160Zm0-128a24,24,0,1,1-24,24A24,24,0,0,1,176,32ZM64,152a24,24,0,1,1,24-24A24,24,0,0,1,64,152Zm112,72a24,24,0,1,1,24-24A24,24,0,0,1,176,224Z"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Banner + Avatar -->
+      <div class="banner-block">
+        <img
+          class="banner-img"
+          src="https://cdn.beacons.ai/user_content/apD0zA6A4XVKrI49F3MXxzJ5xLW2/referenced_images/a2bd6174-0066-4c7e-8a98-a524ad27969d__link-in-bio__header-block__home__72237b66-b221-4779-8f59-5d20bad04b0d__c933903f-0254-4433-a268-cd3d8889412f.webp?t=1783818077156"
+          alt="Banner Ramon Bordoni"
+        >
+        <div class="avatar-row">
+          <img
+            class="avatar"
+            src="https://cdn.beacons.ai/user_content/apD0zA6A4XVKrI49F3MXxzJ5xLW2/profile_ramonbordoni.png?q=1741317646.96834"
+            alt="Foto de perfil Ramon Bordoni"
+          >
+        </div>
+      </div>
+
+      <!-- Profile info -->
+      <div class="profile-info">
+        <h1 class="profile-name">Ramon Bordoni</h1>
+        <p class="profile-bio">Consultor de Marketing Digital | Funis | Tráfego | Copy</p>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <!-- Email -->
+          <a href="#email" aria-label="E-mail">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+              <path d="M166.667 33.333H33.333c-9.208 0-16.583 7.459-16.583 16.667l-.083 100c0 9.208 7.458 16.667 16.666 16.667h133.334c9.208 0 16.666-7.459 16.666-16.667V50c0-9.208-7.458-16.667-16.666-16.667m0 116.667H33.333V66.667L100 108.333l66.667-41.666zM100 91.667 33.333 50h133.334z"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://instagram.com/localmarkdigital" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+              <path d="M65 16.667h70c26.667 0 48.333 21.666 48.333 48.333v70A48.334 48.334 0 0 1 135 183.333H65c-26.667 0-48.333-21.666-48.333-48.333V65A48.333 48.333 0 0 1 65 16.667m-1.667 16.666a30 30 0 0 0-30 30v73.334c0 16.583 13.417 30 30 30h73.334a30 30 0 0 0 30-30V63.333c0-16.583-13.417-30-30-30zm80.417 12.5a10.418 10.418 0 1 1 0 20.836 10.418 10.418 0 0 1 0-20.836M100 58.333a41.667 41.667 0 1 1 0 83.334 41.667 41.667 0 0 1 0-83.334M100 75a25 25 0 1 0 0 50 25 25 0 0 0 0-50"/>
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/ramon-bordoni/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+              <path d="M165.151 17a18.52 18.52 0 0 1 18.519 18.519V165.15a18.52 18.52 0 0 1-18.519 18.519H35.519A18.52 18.52 0 0 1 17 165.151V35.519A18.52 18.52 0 0 1 35.519 17zm-4.63 143.521v-49.075a30.186 30.186 0 0 0-30.185-30.186c-7.871 0-17.038 4.816-21.482 12.038V83.02H83.02v77.501h25.834v-45.649c0-7.129 5.741-12.963 12.87-12.963a12.965 12.965 0 0 1 12.964 12.963v45.649zM52.927 68.483a15.556 15.556 0 0 0 15.556-15.556c0-8.612-6.945-15.649-15.556-15.649a15.65 15.65 0 0 0-15.649 15.649c0 8.61 7.037 15.556 15.649 15.556m12.87 92.038V83.02H40.15v77.501z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Link buttons -->
+      <div class="links-section">
+
+        <!-- Precisa de ajuda? -->
+        <a
+          class="link-btn pulse"
+          href="http://ramonbordoni.com.br/consultoria"
+          aria-label="Precisa de ajuda?"
+        >
+          <div class="link-btn-icon">
+            <img
+              src="https://cdn.beacons.ai/user_content/apD0zA6A4XVKrI49F3MXxzJ5xLW2/referenced_images/9a61f4a7-0da1-4220-9d50-d01b077736c0__link-in-bio__links-block__home__eded3520-96ed-4e7d-9f33-e171d2ef16b9__84b9d113-975a-49b9-952f-9f6bf5d44f01__b80a03ef-e3f0-4eb4-ba9b-3aec991a1de3.webp?t=1783821852725"
+              alt="Precisa de ajuda?"
+            >
+          </div>
+          <div class="link-btn-text">
+            <div class="link-btn-title">Precisa de ajuda?</div>
+            <div class="link-btn-subtitle">Comece por aqui</div>
+          </div>
+        </a>
+
+        <!-- Portfólio -->
+        <a
+          class="link-btn"
+          href="https://www.workana.com/freelancer/0e6a52e6489a8085b8c8ea422f9c6eb1"
+          aria-label="Portfólio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="link-btn-icon">
+            <img
+              src="https://cdn.beacons.ai/user_content/apD0zA6A4XVKrI49F3MXxzJ5xLW2/referenced_images/8d3e5f5c-a55b-44aa-a57f-d61c59680365__link-in-bio__links-block__home__eded3520-96ed-4e7d-9f33-e171d2ef16b9__cf980d34-200e-4bf2-b6bc-86c7ed03b988__96f9cfce-cdfb-48df-9e4d-7be55fbd001c.webp?t=1783817872088"
+              alt="Portfólio"
+            >
+          </div>
+          <div class="link-btn-text">
+            <div class="link-btn-title">Portfólio</div>
+            <div class="link-btn-subtitle">Perfil no Workana</div>
+          </div>
+        </a>
+
+        <!-- Ramon Bordoni – LinkedIn -->
+        <a
+          class="link-btn"
+          href="https://www.linkedin.com/in/ramon-bordoni/"
+          aria-label="Ramon Bordoni no LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="link-btn-icon">
+            <img
+              src="https://cdn.beacons.ai/user_content/apD0zA6A4XVKrI49F3MXxzJ5xLW2/referenced_images/stock-images__link-in-bio__links-block__home__eded3520-96ed-4e7d-9f33-e171d2ef16b9__98a9b746-1d6a-4d9c-8f11-253db6f0da1f__de282d87-38b0-40db-8678-447957841e98.webp?t=1783821699432"
+              alt="LinkedIn"
+            >
+          </div>
+          <div class="link-btn-text">
+            <div class="link-btn-title">Ramon Bordoni</div>
+            <div class="link-btn-subtitle">LinkedIn</div>
+          </div>
+        </a>
+
+        <!-- WhatsApp -->
+        <a
+          class="link-btn"
+          href="https://wa.me/5592984807714"
+          aria-label="WhatsApp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="link-btn-icon">
+            <img
+              src="https://cdn.beacons.ai/user_content/apD0zA6A4XVKrI49F3MXxzJ5xLW2/referenced_images/stock-images__link-in-bio__links-block__home__eded3520-96ed-4e7d-9f33-e171d2ef16b9__d0881492-3baa-4b05-b9ad-1dbc62d669b2__d5638f35-be34-45be-ac8a-e3fffe414301.webp?t=1783821650895"
+              alt="WhatsApp"
+            >
+          </div>
+          <div class="link-btn-text">
+            <div class="link-btn-title">WhatsApp</div>
+            <div class="link-btn-subtitle"></div>
+          </div>
+        </a>
+
+      </div><!-- /links-section -->
+    </div><!-- /card -->
+  </div><!-- /page-wrapper -->
+
+  <script>
+    // Web Share API – falls back to clipboard copy
+    function handleShare() {
+      const shareData = {
+        title: 'Ramon Bordoni | Consultor de Marketing Digital',
+        text: 'Consultor de Marketing Digital | Funis | Tráfego | Copy',
+        url: window.location.href,
+      };
+      if (navigator.share) {
+        navigator.share(shareData).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          alert('Link copiado para a área de transferência!');
+        }).catch(() => {
+          prompt('Copie o link:', window.location.href);
+        });
+      }
+    }
+  </script>
 </body>
 </html>
