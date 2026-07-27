@@ -7,13 +7,16 @@ declare global {
     }
 }
 
-interface CTAButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+interface CTAButtonAdsProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     children: React.ReactNode;
     size?: 'normal' | 'large';
     showIcon?: boolean;
 }
 
-export const CTAButton: React.FC<CTAButtonProps> = ({
+// CTAButtonAds — Versão exclusiva para /consultoria2 (campanha Google Ads)
+// Contém a etiqueta de conversão AW-16662346601/btl_CIqR-NIcEOn2nIk-
+// NÃO usar no /consultoria principal para evitar duplicidade de eventos.
+export const CTAButtonAds: React.FC<CTAButtonAdsProps> = ({
     children,
     size = 'normal',
     className,
@@ -31,13 +34,24 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
 
         if (props.href?.includes('wa.me')) {
 
-            // Evento do GA4 (tráfego orgânico — sem conversão Google Ads)
+            // Evento do GA4
             window.gtag?.(
                 'event',
                 'whatsapp_click',
                 {
                     event_category: 'CTA',
                     event_label: props.href
+                }
+            );
+
+            // Conversão Google Ads — exclusivo para /consultoria2
+            window.gtag?.(
+                'event',
+                'conversion',
+                {
+                    send_to: 'AW-16662346601/btl_CIqR-NIcEOn2nIk-',
+                    value: 1,
+                    currency: 'BRL'
                 }
             );
         }

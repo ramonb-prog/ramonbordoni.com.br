@@ -19,12 +19,16 @@ jobs:
         node-version: '20'
         cache: 'npm'
 
-    - name: 🔨 Install Dependencies & Build
-      run: |
-        npm ci
-        npm run build
+    - name: 🔨 Install Dependencies
+      run: npm ci
 
-    - name: 📂 Sync Files via FTP
+    - name: 🏗️ Build /consultoria (página principal — sem conversão Google Ads)
+      run: npm run build
+
+    - name: 🏗️ Build /consultoria2 (campanha Google Ads — com conversão)
+      run: npm run build:ads
+
+    - name: 📂 Deploy /consultoria via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
@@ -32,3 +36,12 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist/
         server-dir: httpdocs/consultoria/
+
+    - name: 📂 Deploy /consultoria2 via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./dist-ads/
+        server-dir: httpdocs/consultoria2/
