@@ -38,9 +38,9 @@ const HeroHeader = () => (
                     {/* Aguardando nova copy do cliente. Texto atual = original. */}
                     {/* ====================================================== */}
                     <h1 className="font-serif text-[30px] md:text-5xl lg:text-[56px] text-white leading-[1.2] tracking-tight drop-shadow-2xl mx-auto max-w-5xl">
-                        <span className="block mb-2">Marketing não falha por falta de execução.</span>
+                        <span className="block mb-2">Antes de contratar um gestor de tráfego,</span>
                         <span className="bg-gradient-to-r from-[#00A3A3] to-[#4FD1C5] bg-[#4FD1C5] bg-clip-text text-transparent font-semibold tracking-[-0.015em] drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)] inline-block py-1" style={{ backgroundImage: 'linear-gradient(110deg, #00A3A3, #4FD1C5)' }}>
-                            Falha por falta de clareza.
+                            descubra qual é a prioridade do seu negócio.
                         </span>
                     </h1>
                 </FadeIn>
@@ -66,16 +66,16 @@ className="h-auto w-full lg:w-auto lg:max-w-full lg:max-h-[70vh] xl:max-h-[75vh]
                 <FadeIn>
                     <div className="space-y-6">
                         <h2 className="text-[18px] md:text-[24px] text-slate-300/80 font-sans font-medium leading-relaxed">
-                            Antes de investir em <span className="font-bold text-white">anúncios</span>, <span className="font-bold text-white">agência</span> ou qualquer <span className="font-bold text-white">ação digital</span>, você precisa entender o que faz sentido para o seu negócio <span className="font-bold text-white">agora</span>.
-                        </h2>
-                        <p className="text-base md:text-xl text-slate-400/80 italic">
-                            A maioria dos negócios perde tempo e dinheiro tentando “fazer marketing” sem saber <strong className="text-white not-italic">onde investir, o que priorizar e o que parar de fazer.</strong>
-                        </p>
+    Você pode realmente precisar contratar um gestor de tráfego. Mas antes de assumir esse compromisso, vale descobrir se essa é a prioridade do seu negócio.
+</h2>
+                       <p className="text-base md:text-xl text-slate-400/80 italic">
+    A Consultoria X-Press identifica seus gargalos e organiza um plano de ação para que você decida o que fazer primeiro e em qual ordem.
+</p>
                     </div>
                     <div className="mt-10">
-                        <CTAButton href="#cenarios" size="large" className="drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
-                            Quero clareza no meu marketing
-                        </CTAButton>
+                        <CTAButton href="#como-funciona" size="large" className="drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
+    Quero um diagnóstico estratégico
+</CTAButton>
                     </div>
                 </FadeIn>
             </div>
