@@ -25,11 +25,11 @@ jobs:
     - name: 🏗️ Build /consultoria (página principal — sem conversão Google Ads)
       run: npm run build
 
-- name: 🏗️ Build /consultoria2 (campanha Google Ads — com conversão)
-  run: npm run build:ads
+    - name: 🏗️ Build /consultoria2 (campanha Google Ads — com conversão)
+      run: npm run build:ads
 
-- name: 📝 Preparar página inicial da /consultoria2
-  run: mv dist-ads/index-ads.html dist-ads/index.html
+    - name: 📝 Preparar página inicial da /consultoria2
+      run: mv dist-ads/index-ads.html dist-ads/index.html
 
     - name: 📂 Deploy /consultoria via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
