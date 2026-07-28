@@ -39,7 +39,7 @@ const HeroHeader = () => (
                     {/* ====================================================== */}
                     <h1 className="font-serif text-[30px] md:text-5xl lg:text-[56px] text-white leading-[1.2] tracking-tight drop-shadow-2xl mx-auto max-w-5xl">
                         <span className="block mb-2">Antes de contratar um gestor de tráfego,</span>
-                        <span className="bg-gradient-to-r from-[#00A3A3] to-[#4FD1C5] bg-[#4FD1C5] bg-clip-text text-transparent font-semibold tracking-[-0.015em] drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)] inline-block py-1" style={{ backgroundImage: 'linear-gradient(110deg, #00A3A3, #4FD1C5)' }}>
+                        <span className="bg-clip-text text-transparent font-semibold tracking-[-0.015em] drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)] inline-block py-1" style={{ backgroundImage: 'linear-gradient(110deg, #008080 0%, #18B8B2 55%, #65D6CC 100%)' }}>
                             descubra qual é a prioridade do seu negócio.
                         </span>
                     </h1>
@@ -66,7 +66,7 @@ className="h-auto w-full lg:w-auto lg:max-w-full lg:max-h-[70vh] xl:max-h-[75vh]
                 <FadeIn>
                     <div className="space-y-6">
                         <h2 className="text-[18px] md:text-[24px] text-slate-300/80 font-sans font-medium leading-relaxed">
-    Você pode realmente precisar contratar um gestor de tráfego. Mas antes de assumir esse compromisso, vale descobrir se essa é a prioridade do seu negócio.
+    Você pode realmente precisar contratar um <strong className="font-bold text-white">gestor de tráfego</strong>. Mas antes de assumir esse compromisso, vale descobrir se essa é a <strong className="font-bold text-white">prioridade do seu negócio</strong>.
 </h2>
                        <p className="text-base md:text-xl text-slate-400/80 italic">
     A Consultoria X-Press identifica seus gargalos e organiza um plano de ação para que você decida o que fazer primeiro e em qual ordem.
